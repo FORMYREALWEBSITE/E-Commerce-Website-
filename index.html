@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navbar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">Logo</div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Our Policies</a></li>
+            <li><a href="#">Review</a></li>
+            <li><a href="#">Order Now</a></li>
+        </ul>
+        <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+    </nav>
+
+    <div class="overlay" id="overlay">
+        <div class="close-btn" onclick="toggleMenu()">&times;</div>
+        <div class="overlay-logo">Logo</div>
+        <ul class="overlay-menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Our Policies</a></li>
+            <li><a href="#">Review</a></li>
+            <li><a href="#">Order Now</a></li>
+        </ul>
+    </div>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
