@@ -179,7 +179,7 @@ section h2{
     height: 50vh;
     width: 100%;
     position: relative;
-    background-image: url('/img/banner.jpg');
+    background-image: url('../img/banner.jpg');
     background-color: rgba(0, 0, 0, 0.4);
     background-blend-mode:darken ;
     background-size: cover;
