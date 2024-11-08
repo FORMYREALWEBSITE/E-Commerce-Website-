@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoMart - Contact Us</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar from your provided code -->
+    <nav class="navbar">
+        <div class="logo">EcoMart</div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Our Policies</a></li>
+            <li><a href="#">Review</a></li>
+            <li><a href="#">Order Now</a></li>
+        </ul>
+        <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+    </nav>
+
+    <!-- Contact Us Section -->
+    <section class="contact-us">
+        <div class="contact-us-content">
+            <h1>Contact Us</h1>
+            <p>We’re here to assist you! Reach out for any questions or support you need.</p>
+
+            <div class="contact-details">
+                <div class="contact-info">
+                    <h2>Get in Touch</h2>
+                    <p><strong>Address:</strong> 123 Green St, EcoCity, EC 12345</p>
+                    <p><strong>Phone:</strong> +123-456-7890</p>
+                    <p><strong>Email:</strong> contact@ecomart.com</p>
+                </div>
+
+                <div class="contact-form">
+                    <h2>Send us a Message</h2>
+                    <form action="submit_form.php" method="POST">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+
+                        <button type="submit">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
