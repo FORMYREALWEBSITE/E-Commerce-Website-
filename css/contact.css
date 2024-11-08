@@ -14,8 +14,8 @@ body {
     justify-content: space-between;
     align-items: center;
     background-color: #ffffff;
-    padding: 30px 30px; /* Increased padding for height */
-    box-shadow: 0px 5px 5px green;
+    padding: 25px 25px; /* Increased padding for height */
+    box-shadow: 0px 3px 3px green;
     
     position: fixed; /* Fixes navbar at the top */
     top: 0;
