@@ -6,6 +6,8 @@
 
 body {
     font-family: Arial, sans-serif;
+    background: url('img/back.png') no-repeat center center fixed;
+    background-size: cover;
 }
 
 /* Navbar Styles */
@@ -114,7 +116,6 @@ body {
 }
 .contact-us {
     margin-top: 85px;
-    background-image: url("img/back.png");
     color: #ffffff;
     padding: 60px 20px;
     text-align: center;
