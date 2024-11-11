@@ -1,0 +1,270 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 30px 30px; /* Increased padding for height */
+    box-shadow: 0px 5px 5px green;
+    
+    position: fixed; /* Fixes navbar at the top */
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Ensures navbar is in front of other elements */
+}
+
+
+.logo {
+    color: #01a60f;
+    font-size: 24px;
+    font-weight: bolder;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 40px;  /* Added space between options */
+}
+
+.nav-links li a {
+    color: #01a60f;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+.hamburger {
+    display: none;
+    font-size: 32px;  /* Increased hamburger icon size */
+    color: #01a60f;
+    cursor: pointer;
+}
+
+/* Overlay styles for mobile menu */
+.overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 0;
+    background-color: rgba(0, 0, 0, 0.9);  /* Adjusted transparency to 50% */
+    overflow-x: hidden;
+    transition: width 0.3s ease;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.overlay-logo {
+    color: #fff;
+    font-size: 28px;
+    margin-top: 50px;  /* Space for logo at the top */
+}
+
+.overlay-menu {
+    list-style: none;
+    margin-top: 80px;  /* Space below the logo */
+    text-align: center;
+    width: 100%;
+}
+
+.overlay-menu li {
+    margin: 20px 0;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);  /* Line separator */
+}
+
+.overlay-menu li:last-child {
+    border-bottom: none;  /* Remove border from the last item */
+}
+
+.overlay-menu li a {
+    color: #fff;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    font-size: 48px;  
+    color: #fff;
+    cursor: pointer;
+}
+
+
+@media (max-width: 920px) {
+    .nav-links {
+        display: none;
+    }
+    .hamburger {
+        display: block;
+    }
+}
+
+/* Header Section with Parallax Effect */
+.about-header {
+    background-image: url('images/about-bg.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+    color: #fff;
+}
+
+.about-header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 0;
+}
+
+.header-content {
+    position: relative;
+    z-index: 1;
+}
+
+.header-content h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.header-content p {
+    font-size: 20px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+}
+
+/* Mission Section */
+.mission-section {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+.mission-section h2 {
+    font-size: 36px;
+    color: #01a60f;
+    margin-bottom: 20px;
+}
+
+.mission-section p {
+    font-size: 18px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Team Section */
+.team-section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.team-section h2 {
+    font-size: 36px;
+    color: #01a60f;
+    margin-bottom: 40px;
+}
+
+.team-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.team-member {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    width: 250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.team-member:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 128, 0, 0.2);
+}
+
+.team-member img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.team-member h3 {
+    font-size: 20px;
+    color: #01a60f;
+}
+
+.team-member p {
+    font-size: 16px;
+    color: #555;
+}
+
+/* Footer Section */
+.footer {
+    background-color: #333;
+    color: #f4f4f4;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+}
+
+.footer a {
+    color: #01a60f;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .header-content h1 {
+        font-size: 36px;
+    }
+
+    .header-content p {
+        font-size: 16px;
+    }
+
+    .mission-section h2, .team-section h2 {
+        font-size: 28px;
+    }
+
+    .team-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .team-member {
+        width: 80%;
+        max-width: 300px;
+    }
+}

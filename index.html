@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="animations.css">
+    <title>EcoMart - Home</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">EcoMart</div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="policies.html">Our Policies</a></li>
+            <li><a href="review.html">Review</a></li>
+        </ul>
+        <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+    </nav>
+    <div class="overlay" id="overlay">
+        <div class="close-btn" onclick="toggleMenu()">&times;</div>
+        <div class="overlay-logo">EcoMart</div>
+        <ul class="overlay-menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="policies.html">Our Policies</a></li>
+            <li><a href="review.html">Review</a></li>
+        </ul>
+    </div>
+    <section class="hero-section">  
+        <div class="hero-content">
+            <h1>Welcome to EcoMart</h1>
+            <p>Your one-stop shop for eco-friendly products!</p>
+            <a href="#products" class="hero-btn">Shop Now</a>
+        </div>
+    </section>
+    <section>
+        <h2>Browse Categories</h2>
+        <div class="grid">
+            <div class="card-img">
+                <img src="Images/img1.jpg" alt="">
+                <div class="content">
+                    <h3 data-animate-viewport class="anime-fade">Decorative Plants</h3>
+                    <a href="decorative-plants.html" class="card-btn anime-fade" data-animate-viewport="">View All</a>
+                </div>
+            </div>
+            <div class="card-img">
+                <img src="Images/img2.webp" alt="">
+                <div class="content">
+                    <h3 data-animate-viewport="" class="anime-fade">Gifting Pants</h3>
+                    <a href="gifting-plants.html" class="card-btn anime-fade" data-animate-viewport="">View All</a>
+                </div>
+            </div>
+            <div class="card-img">
+                <img src="Images/img3.webp" alt="">
+                <div class="content">
+                    <h3 data-animate-viewport=" " class="anime-fade"> T-Shirts</h3>
+                    <a href="clothes.html" class="card-btn anime-fade" data-animate-viewport="">View All</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <br>
+    <section id="products">
+        <h2>Our Products</h2>
+        <div class="product-sections">
+            <div class="product-category">
+                <div class="product-slider">
+        <div class="product-card">
+            <img src="Images/OIP.jpeg" alt="Vegan T-Shirt">
+            <h3>Organic Cotton T-Shirt</h3>
+            <p class="price">₹500</p>
+             <div class="quantity-container">
+                <button onclick="decreaseQuantity('quantity1')">-</button>
+                <p id="quantity1">0</p>
+                <button onclick="increaseQuantity('quantity1')">+</button>
+            </div>
+        </div>
+        <div class="product-card">
+            <img src="Images/hemp.jpg" alt="Vegan T-Shirt">
+            <h3>Hemp shirts</h3>
+            <p class="price">₹800</p>
+             <div class="quantity-container">
+                <button onclick="decreaseQuantity('quantity2')">-</button>
+                <p id="quantity2">0</p>
+                <button onclick="increaseQuantity('quantity2')">+</button>
+            </div>
+        </div>
+        <div class="product-card">
+            <img src="Images/ten.jpg" alt="Vegan T-Shirt">
+            <h3>Tencel blouses</h3>
+            <p class="price">₹1000</p>
+             <div class="quantity-container">
+                <button onclick="decreaseQuantity('quantity3')">-</button>
+                <p id="quantity3">0</p>
+                <button onclick="increaseQuantity('quantity3')">+</button>
+            </div>
+        </div>
+        <div class="product-card">
+            <img src="Images/re.jpg" alt="Vegan T-Shirt">
+            <h3>Recycled polyester sweaters</h3>
+            <p class="price">₹1500</p>
+             <div class="quantity-container">
+                <button onclick="decreaseQuantity('quantity4')">-</button>
+                <p id="quantity4">0</p>
+                <button onclick="increaseQuantity('quantity4')">+</button>
+            </div>
+        </div>
+        <div class="product-card">
+            <img src="Images/or.jpeg" alt="Vegan T-Shirt">
+            <h3>Organic cotton jeans</h3>
+            <p class="price">₹1500</p>
+             <div class="quantity-container">
+                <button onclick="decreaseQuantity('quantity5')">-</button>
+                <p id="quantity5">0</p>
+                <button onclick="increaseQuantity('quantity5')">+</button>
+            </div>
+        </div>
+    </div>
+    <div class="product-category">
+        <div class="product-slider">
+<div class="product-card">
+    <img src="Images/rep.jpeg" alt="Vegan T-Shirt">
+    <h3>Recycled polyester leggings</h3>
+    <p class="price">₹500</p>
+     <div class="quantity-container">
+        <button onclick="decreaseQuantity('quantity6')">-</button>
+        <p id="quantity6">0</p>
+        <button onclick="increaseQuantity('quantity6')">+</button>
+    </div>
+</div>
+<div class="product-card">
+    <img src="Images/R.jpeg" alt="Vegan T-Shirt">
+    <h3>Tencel skirts</h3>
+    <p class="price">₹800</p>
+     <div class="quantity-container">
+        <button onclick="decreaseQuantity('quantity7')">-</button>
+        <p id="quantity7">0</p>
+        <button onclick="increaseQuantity('quantity7')">+</button>
+    </div>
+</div>
+<div class="product-card">
+    <img src="Images/ve.jpg" alt="Vegan T-Shirt">
+    <h3>Vegan leather bags</h3>
+    <p class="price">₹1000</p>
+     <div class="quantity-container">
+        <button onclick="decreaseQuantity('quantity8')">-</button>
+        <p id="quantity8">0</p>
+        <button onclick="increaseQuantity('quantity8')">+</button>
+    </div>
+</div>
+<div class="product-card">
+    <img src="Images/ves.webp" alt="Vegan T-Shirt">
+    <h3>Vegan sneakers</h3>
+    <p class="price">₹1500</p>
+     <div class="quantity-container">
+        <button onclick="decreaseQuantity('quantity9')">-</button>
+        <p id="quantity9">0</p>
+        <button onclick="increaseQuantity('quantity9')">+</button>
+    </div>
+</div>
+<div class="product-card">
+    <img src="Images/vej.jpeg" alt="Vegan T-Shirt">
+    <h3>Vegan leather jackets</h3>
+    <p class="price">₹1500</p>
+     <div class="quantity-container">
+        <button onclick="decreaseQuantity('quantity10')">-</button>
+        <p id="quantity10">0</p>
+        <button onclick="increaseQuantity('quantity10')">+</button>
+    </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+    </section>
+    <footer>
+        <div class="cols">
+            <div class="col-span-2">
+                <h5>Aryan</h5>
+                <p>Firmament morning sixth subdue darkness creeping gathered divide.</p>
+            </div>
+            <div>
+                <h5>Useful Links</h5>
+                <ul>
+                    <li>
+                        <a href="">About</a>
+                    </li>
+                    <li>
+                        <a href="">Blog</a>
+                    </li>
+                    <li>
+                        <a href="">Contact</a>
+                    </li>
+                    <li>
+                        <a href="">Products</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h5>Adress</h5>
+                <p>200, D-block, Green lane USA
+                    +10 367 467 8934
+                    test@aryan.com
+                </p>
+            </div>
+        </div>
+        <div class="copy">
+            Copyright &copy;2024 this website is made with &#x2764; by Aryan
+        </div>
+    </footer>
+    <script src="main.js"></script>
+    <script src="animation.js"></script>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - EcoMart</title>
+    <link rel="stylesheet" href="about.css">
+</head>
+<body>
+
+    <!-- Navbar - Keeping the same as requested -->
+    <nav class="navbar">
+        <div class="logo">EcoMart</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="policies.html">Our Policies</a></li>
+            <li><a href="reviews.html">Review</a></li>
+            <li><a href="order.html">Order Now</a></li>
+        </ul>
+        <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+    </nav>  
+    <div class="overlay" id="overlay">
+        <div class="close-btn" onclick="toggleMenu()">&times;</div>
+        <div class="overlay-logo">EcoMart</div>
+        <ul class="overlay-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="policies.html">Our Policies</a></li>
+            <li><a href="reviews.html">Review</a></li>
+            <li><a href="order.html">Order Now</a></li>
+        </ul>
+    </div>
+
+    <!-- Header Section with Parallax Effect -->
+    <header class="about-header">
+        <div class="header-content">
+            <h1>About EcoMart</h1>
+            <p>Your one-stop shop for sustainable, eco-friendly products.</p>
+        </div>
+    </header>
+
+    <!-- Mission Section -->
+    <section class="mission-section">
+        <h2>Our Mission</h2>
+        <p>At EcoMart, our mission is to create a sustainable future by offering eco-friendly products that you can trust. We believe in transparency, quality, and making a positive impact on the world around us.</p>
+    </section>
+
+    <!-- Team Section -->
+    <section class="team-section">
+        <h2>Meet Our Team</h2>
+        <div class="team-container">
+            <div class="team-member">
+                <img src="images/team1.jpg" alt="Team Member 1">
+                <h3>Jane Doe</h3>
+                <p>Founder & CEO</p>
+            </div>
+            <div class="team-member">
+                <img src="images/team2.jpg" alt="Team Member 2">
+                <h3>John Smith</h3>
+                <p>Product Manager</p>
+            </div>
+            <div class="team-member">
+                <img src="images/team3.jpg" alt="Team Member 3">
+                <h3>Emily Johnson</h3>
+                <p>Head of Marketing</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <p>&copy; 2024 EcoMart. All rights reserved.</p>
+        <p><a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
